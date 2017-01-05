@@ -79,6 +79,13 @@ public class FireAttack : MonoBehaviour {
         }
 	}
 
+    /**
+     * <summary>
+     * Fireが敵キャラと衝突した場合両方とも削除
+     * </summary>
+     * @param
+     * @return
+     **/
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("GameObject"))
